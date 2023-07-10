@@ -40,7 +40,7 @@
 #include <variant>
 #include <vector>
 
-static constexpr bool debug = true;
+static constexpr bool debug = false;
 
 static const I2CDeviceTypeMap sensorTypes{
     {"I2C", I2CDeviceType{"", true}},
