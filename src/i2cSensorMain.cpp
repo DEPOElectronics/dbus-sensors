@@ -894,6 +894,7 @@ void propertyInitialize(void)
 {
     sensorTable = {{"power", sensor_paths::unitWatts},
                    {"curr", sensor_paths::unitAmperes},
+                   {"freq", sensor_paths::unitRPMs},
                    {"temp", sensor_paths::unitDegreesC},
                    {"in", sensor_paths::unitVolts},
                    {"fan", sensor_paths::unitRPMs},
@@ -903,6 +904,7 @@ void propertyInitialize(void)
         {"power", i2cProperty("Output Power", 3000, 0, 6, 0)},
         {"in", i2cProperty("Output Voltage", 255, 0, 3, 0)},
         {"curr", i2cProperty("Output Current", 255, 0, 3, 0)},
+        {"freq", i2cProperty("Frequency", 10000, 0, 6, 0)},
         {"temp", i2cProperty("Temperature", 127, -128, 3, 0)},
         {"fan", i2cProperty("Fan Speed", 30000, 0, 0, 0)}};
 
