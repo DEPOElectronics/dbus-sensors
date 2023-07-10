@@ -212,6 +212,24 @@ if get_option('nvme').enabled()
     )
 endif
 
+if get_option('i2c').enabled()
+    executable(
+        'i2csensor',
+        'i2cEvent.cpp',
+        'i2cSensor.cpp',
+        'i2cSensorMain.cpp',
+        dependencies: [
+            default_deps,
+            devicemgmt_dep,
+            pwmsensor_dep,
+            thresholds_dep,
+            utils_dep,
+        ],
+        cpp_args: uring_args,
+        install: true,
+    )
+endif
+
 if get_option('psu').enabled()
     executable(
         'psusensor',

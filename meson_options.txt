@@ -4,6 +4,7 @@ option('exit-air', type: 'feature', value: 'enabled', description: 'Enable exit 
 option('fan', type: 'feature', value: 'enabled', description: 'Enable fan sensor.',)
 option('hwmon-temp', type: 'feature', value: 'enabled', description: 'Enable HWMON temperature sensor.',)
 option('intrusion', type: 'feature', value: 'enabled', description: 'Enable intrusion sensor.',)
+option('i2c', type: 'feature', value: 'enabled', description: 'Enable abstract i2c sensor.',)
 option('ipmb', type: 'feature', value: 'enabled', description: 'Enable IPMB sensor.',)
 option('mcu', type: 'feature', value: 'enabled', description: 'Enable MCU sensor.',)
 option('nvme', type: 'feature', value: 'enabled', description: 'Enable NVMe sensor.',)
